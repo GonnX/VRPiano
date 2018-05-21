@@ -21,11 +21,11 @@ public class Re_Controller : MonoBehaviour {
     {
         if (serialData == '2')
         {
-            rb.GetComponent<Renderer>().enabled = false;
+            rb.GetComponent<Renderer>().enabled = true;
         }
         else
         {
-            rb.GetComponent<Renderer>().enabled = true;
+            rb.GetComponent<Renderer>().enabled = false;
         }
         serialData = 0;
     }

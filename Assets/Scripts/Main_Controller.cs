@@ -19,7 +19,7 @@ public class Main_Controller : MonoBehaviour {
     {
         rb = GetComponent<Rigidbody>();
         rb.GetComponent<Renderer>().enabled = false;
-        stream = new SerialPort("COM9", 9600);
+        stream = new SerialPort("\\\\.\\COM17", 9600, Parity.None, 8, StopBits.One);
         Connect();
     }
     // Update is called once per frame
